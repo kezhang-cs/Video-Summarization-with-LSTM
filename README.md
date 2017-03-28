@@ -11,16 +11,22 @@ Note that we down-sampled the original video by 2fps, so I think it would be bet
 
 Original videos and annotations for each dataset are also available from the the authors' project page
 
-* TVSum dataset: https://github.com/yalesong/tvsum
-  Yale Song, Jordi Vallmitjana, Amanda Stent, and Alejandro Jaimes. "Tvsum: Summarizing web videos using titles." In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, pp. 5179-5187, 2015.
-* SumMe dataset: https://people.ee.ethz.ch/~gyglim/vsum/#benchmark
-  Michael Gygli, Helmut Grabner, Hayko Riemenschneider, and Luc Van Gool. "Creating summaries from user videos." In European conference on computer vision, pp. 505-520, 2014.
-* OVP and YouTube datasets: https://sites.google.com/site/vsummsite/
-  S. E. F. de Avila, A. P. B. Lopes, A. da Luz, and A. de Albuquerque Ara´ujo. "Vsumm: A mechanism designed to produce static video summaries and a novel evaluation method," Pattern Recognition Letters, 32(1):56–68, 2011.
+* TVSum dataset [1]: https://github.com/yalesong/tvsum
+* SumMe dataset [2]: https://people.ee.ethz.ch/~gyglim/vsum/#benchmark
+  
+* OVP and YouTube datasets [3]: https://sites.google.com/site/vsummsite/
+  
 
 # Code for evaluation
 For both SumMe and TVsum datasets, you can find the code for evaluation provided by the author:
-SumMe Dataset: https://people.ee.ethz.ch/~gyglim/vsum/#benchmark
-TVSum Dataset: https://github.com/yalesong/tvsum
+* SumMe Dataset: https://people.ee.ethz.ch/~gyglim/vsum/#benchmark
+* TVSum Dataset: https://github.com/yalesong/tvsum
 
 I also provided the evaluation code with wrappers that help adapt to the datasets above
+
+## Reference
+[1] Yale Song, Jordi Vallmitjana, Amanda Stent, and Alejandro Jaimes. "Tvsum: Summarizing web videos using titles." In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, pp. 5179-5187, 2015.
+
+[2] Michael Gygli, Helmut Grabner, Hayko Riemenschneider, and Luc Van Gool. "Creating summaries from user videos." In European conference on computer vision, pp. 505-520, 2014.
+
+[3] S. E. F. de Avila, A. P. B. Lopes, A. da Luz, and A. de Albuquerque Ara´ujo. "Vsumm: A mechanism designed to produce static video summaries and a novel evaluation method," Pattern Recognition Letters, 32(1):56–68, 2011.
