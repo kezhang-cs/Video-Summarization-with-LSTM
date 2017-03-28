@@ -1,7 +1,7 @@
-## Video-Summarization-with-LSTM
+# Video-Summarization-with-LSTM
 Providing the data and codes for evaluation for our ECCV 2016 Paper (Video Summarization with Long Short-term Memory)
 
-# Data
+## Data
 
 Please refer to the following link as the data used in our paper: 
 https://www.dropbox.com/s/717k8523ui0zaio/Data_releasing.zip?dl=0
@@ -17,7 +17,7 @@ Original videos and annotations for each dataset are also available from the the
 * OVP and YouTube datasets [3]: https://sites.google.com/site/vsummsite/
   
 
-# Code for evaluation
+## Code for evaluation
 
 For both SumMe and TVsum datasets, you can find the code for evaluation provided by the author:
 * TVSum [1]: https://github.com/yalesong/tvsum
