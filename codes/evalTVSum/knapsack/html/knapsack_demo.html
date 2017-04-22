@@ -1,0 +1,148 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <!--
+This HTML is auto-generated from an M-file.
+To make changes, update the M-file and republish this document.
+      -->
+      <title>knapsack_demo</title>
+      <meta name="generator" content="MATLAB 7.7">
+      <meta name="date" content="2009-02-09">
+      <meta name="m-file" content="knapsack_demo"><style type="text/css">
+
+body {
+  background-color: white;
+  margin:10px;
+}
+
+h1 {
+  color: #990000; 
+  font-size: x-large;
+}
+
+h2 {
+  color: #990000;
+  font-size: medium;
+}
+
+/* Make the text shrink to fit narrow windows, but not stretch too far in 
+wide windows. */ 
+p,h1,h2,div.content div {
+  max-width: 600px;
+  /* Hack for IE6 */
+  width: auto !important; width: 600px;
+}
+
+pre.codeinput {
+  background: #EEEEEE;
+  padding: 10px;
+}
+@media print {
+  pre.codeinput {word-wrap:break-word; width:100%;}
+} 
+
+span.keyword {color: #0000FF}
+span.comment {color: #228B22}
+span.string {color: #A020F0}
+span.untermstring {color: #B20000}
+span.syscmd {color: #B28C00}
+
+pre.codeoutput {
+  color: #666666;
+  padding: 10px;
+}
+
+pre.error {
+  color: red;
+}
+
+p.footer {
+  text-align: right;
+  font-size: xx-small;
+  font-weight: lighter;
+  font-style: italic;
+  color: gray;
+}
+
+  </style></head>
+   <body>
+      <div class="content">
+         <h2>Contents</h2>
+         <div>
+            <ul>
+               <li><a href="#1">Knapsack demonstration</a></li>
+               <li><a href="#3">Solve the knapsack problem</a></li>
+            </ul>
+         </div>
+         <h2>Knapsack demonstration<a name="1"></a></h2>
+         <p>&Iuml;nteger weights of items</p><pre class="codeinput">N = 12;
+weights = randint(1,N,[1 1000])
+</pre><pre class="codeoutput">
+weights =
+
+   332   980   158   422   869   765   529   786    40   268   910   269
+
+</pre><p>Values of the items (don't have to be integers)</p><pre class="codeinput">values = randint(1,N,[1 100])
+</pre><pre class="codeoutput">
+values =
+
+    30    31    20    79    96    69    88    31    84     2    24    14
+
+</pre><h2>Solve the knapsack problem<a name="3"></a></h2>
+         <p>Call the provided m-file</p><pre class="codeinput">capacity = 3000;
+[best amount] = knapsack(weights, values, capacity);
+best
+items = find(amount)
+</pre><pre class="codeoutput">
+best =
+
+   446
+
+
+items =
+
+     1     4     5     6     7     9
+
+</pre><p>Check that the result matches the contraint and the best value</p><pre class="codeinput">sum(weights(items))
+sum(values(items))
+</pre><pre class="codeoutput">
+ans =
+
+        2957
+
+
+ans =
+
+   446
+
+</pre><p class="footer"><br>
+            Published with MATLAB&reg; 7.7<br></p>
+      </div>
+      <!--
+##### SOURCE BEGIN #####
+%%% Knapsack demonstration
+% Ïnteger weights of items
+N = 12;
+weights = randint(1,N,[1 1000])
+%%
+% Values of the items (don't have to be integers)
+values = randint(1,N,[1 100])
+
+%% Solve the knapsack problem
+% Call the provided m-file
+capacity = 3000;
+[best amount] = knapsack(weights, values, capacity);
+best
+items = find(amount)
+%%
+% Check that the result matches the contraint and the best value
+sum(weights(items))
+sum(values(items))
+##### SOURCE END #####
+-->
+   </body>
+</html>
