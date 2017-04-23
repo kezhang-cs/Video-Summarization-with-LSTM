@@ -2,7 +2,11 @@
 
 This repository provides the data and implementation for video summarization with LSTM, i.e. vsLSTM and dppLSTM in our paper:
 
-*[Ke Zhang](http://www-scf.usc.edu/~zhan355/index.html)\*, Wei-Lun Chao\*, Fei Sha, and Kristen Grauman. Video Summarization with Long Short-term Memory. In Proceedings of the European Conference on Computer Vision (ECCV), 2016, Amsterdam, The Netherlands. (*Equal contribution)  \[[pdf](http://www-scf.usc.edu/~zhan355/ke_eccv2016.pdf)\] \[[supp](http://www-scf.usc.edu/~zhan355/ke_eccv2016_supp.pdf)\]*
+**[Video Summarization with Long Short-term Memory](http://www-scf.usc.edu/~zhan355/ke_eccv2016.pdf)**
+<br>
+[Ke Zhang](http://www-scf.usc.edu/~zhan355/index.html)\*, Wei-Lun Chao\*, Fei Sha, and Kristen Grauman. 
+<br>
+In Proceedings of the European Conference on Computer Vision (ECCV), 2016, Amsterdam, The Netherlands. (*Equal contribution)  \[[pdf](http://www-scf.usc.edu/~zhan355/ke_eccv2016.pdf)\] \[[supp](http://www-scf.usc.edu/~zhan355/ke_eccv2016_supp.pdf)\]
 
 If you find the codes or other related resources from this repository useful, please cite the following paper:
 
@@ -70,4 +74,5 @@ To run evaluation on the predicted summarization, start the matlab and run the f
 cd ./codes
 dppLSTM_eval('../data/', '$DATASET$', '/dppLSTM_$DATASET$_2_inference.h5')
 ```
+
 
