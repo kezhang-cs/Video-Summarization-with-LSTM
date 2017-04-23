@@ -55,7 +55,7 @@ cd ./codes
 THEANO_FLAGS=device=gpu0,floatX=float32 python dppLSTM_main.py 
 ```
 
-This will automatically run summarization on the video data using pre-trained model, and save the results in *./res_LSTM/* as **dppLSTM_$DATASET$_inference.h5**
+This will automatically run summarization on the video data using pre-trained model, and save the results in *./res_LSTM/* as **dppLSTM_$DATASET$_2_inference.h5**
 
 If you want to train the model on your own data, just uncomment Line 85 in *dppLSTM_main.py*
 ```
